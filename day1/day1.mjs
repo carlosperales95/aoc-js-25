@@ -69,7 +69,6 @@ Because the dial points at 0 a total of three times during this process, the pas
 Analyze the rotations in your attached document. What's the actual password to open the door?
 **/
 
-
 export function first(input) {
     const movements = input.trim().split('\n');
     
@@ -86,8 +85,7 @@ export function first(input) {
 }
 
 
-/**
---- Part Two ---
+/** --- Part Two ---
 
 You're sure that's the right password, but the door won't open. You knock, but nobody answers. 
 You build a snowman while you think.
@@ -120,7 +118,7 @@ Using password method 0x434C49434B, what is the password to open the door?
 */
 
 export function second(input) {
-    const movements = input.split('\n');
+    const movements = input.trim().split('\n');
     // console.log(`Input: ${movements}`);
     
     let zeroCounts = 0;
